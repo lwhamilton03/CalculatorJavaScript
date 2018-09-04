@@ -1,0 +1,53 @@
+
+body{
+    background: grey; 
+    align-content: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+    align-items: center; 
+
+}
+h1{
+    font-size: 80px; 
+    text-align: center; 
+}
+
+#firstNum{
+    color: black; 
+    padding: 16px;
+}
+
+#secondNum{
+    color: black; 
+    padding: 16px;
+}
+
+button{
+    width: 202;
+     height: 202;
+    display: inline-flex;
+}
+
+#result{
+    padding: 16px; 
+    width: 404; 
+}
+.center{
+     margin: auto;
+    border: 26px solid black;
+    width: 450; 
+    padding: 10px;
+}
+#box{
+    margin: auto; 
+    border:26px solid black;
+    width: 450; 
+    padding: 10px; 
+}
+h3{
+    font-size:80px; 
+    text-align: center; 
+    text-indent: 35%;
+    
+    
+}
