@@ -1,0 +1,83 @@
+<html>
+    <head> 
+        <title> Calculator </title>
+    </head>
+
+    <body>
+        <div> 
+            <h1> Calculator </h2> 
+            <script>
+                    function empty()
+                    {
+                        if(document.getElementById('firstNum').value == "" && document.getElementById('secondNum').value == "")
+                        {
+                            document.getElementById("firstNum").focus();
+                            window.alert("PLEASE INPUT A FIRST AND SECOND NUMBER");
+                            return false; 
+                        }
+                        else if(document.getElementById('firstNum').value =="")
+                        {
+                            document.getElementById("firstNum").focus();
+                            window.alert("PLEASE INPUT A FIRST NUMBER");
+                            return false; 
+                        }
+                        else if(document.getElementById('secondNum').value =="")
+                        {
+                            document.getElementById("secondNum").focus();
+                            window.alert("PLEASE INPUT A SECOND NUMBER");
+                            return false; 
+                        }
+                        return true; 
+                    };
+
+                    function addTwo()
+                    {   if (empty())
+                        {
+                            var firstSum = parseInt(document.getElementById('firstNum').value);
+                            var secondSum = parseInt(document.getElementById('secondNum').value);
+                            document.getElementById('result').value = firstSum + secondSum;  
+                        }
+                    };
+
+                    function subtractTwo()
+                    {   if (empty())
+                        {
+                            var firstSum = parseInt(document.getElementById('firstNum').value);
+                            var secondSum = parseInt(document.getElementById('secondNum').value);
+                            document.getElementById('result').value = firstSum - secondSum;  
+                        }
+                    };
+
+                    function multiplyTwo()
+                    {   if (empty())
+                        {
+                             var firstSum = parseInt(document.getElementById('firstNum').value);
+                             var secondSum = parseInt(document.getElementById('secondNum').value);
+                             document.getElementById('result').value = firstSum * secondSum;  
+                        }
+                    };
+
+                    function divideTwo()
+                    {   if (empty())
+                        {
+                            var firstSum = parseInt(document.getElementById('firstNum').value);
+                            var secondSum = parseInt(document.getElementById('secondNum').value);
+                            document.getElementById('result').value = firstSum / secondSum;  
+                        } 
+                    };
+
+            </script>
+
+            
+                <input id = "firstNum" type="number" placeholder = "Enter First Number" > 
+                <input id = "secondNum" type="number" placeholder = "Enter Second Number">
+                
+                <button onclick="addTwo()"><h1> + </h1> </button>
+                <button onclick="subtractTwo()"><h1> - </h1> </button>
+                <button onclick="multiplyTwo()"><h1> * </h1> </button>
+                <button onclick="divideTwo()"><h1> / </h1> </button>
+
+                <input id="result" type="number" placeholder="RESULT" readonly="readonly"> 
+              
+    </body>
+</html>
